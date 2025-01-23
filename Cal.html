@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+<link rel="stylesheet" href="Cal.css">
+</head>
+<body>
+  <main class="container">
+    <section class="screen">
+      <p class="calculate" id="calculate"></p>
+      <p class="result" id="result"></p>
+    </section>
+    <section class="button-box">
+      <button onclick="tapClear()">AC</button>
+      <button onclick="tapOperator('Math.PI')" title="Pi (π)">π</button>
+      <button onclick="tapOperator('Math.E')" title="Euler's number (e)">e</button>
+      <button onclick="tapDel()">DEL</button>
+      <button onclick="tapOperator('/')" title="Divide">÷</button>
+
+      <button onclick="tapNum('9')">9</button>
+      <button onclick="tapNum('8')">8</button>
+      <button onclick="tapNum('7')">7</button>
+      <button onclick="tapOperator('*')" title="Multiply">×</button>
+      <button onclick="tapFunction('Math.sqrt')">√</button>
+
+      <button onclick="tapNum('4')">4</button>
+      <button onclick="tapNum('5')">5</button>
+      <button onclick="tapNum('6')">6</button>
+      <button onclick="tapOperator('-')" title="Subtract">−</button>
+      <button onclick="tapFunction('Math.pow', 2)">x²</button>
+
+      <button onclick="tapNum('1')">1</button>
+      <button onclick="tapNum('2')">2</button>
+      <button onclick="tapNum('3')">3</button>
+      <button onclick="tapOperator('+')" title="Add">+</button>
+      <button onclick="tapFunction('Math.pow', 3)">x³</button>
+
+      <button onclick="tapNum('0')" class="nol-btn">0</button>
+      <button onclick="tapNum('.')">.</button>
+      <button onclick="tapFunction('Math.log10')" title="Logarithm">log</button>
+      <button onclick="tapFunction('Math.sin')" title="Sine">sin</button>
+      <button onclick="tapFunction('Math.cos')" title="Cosine">cos</button>
+
+      <button onclick="tapFunction('Math.tan')" title="Tangent">tan</button>
+      <button onclick="tapFunction('Math.exp')" title="Exponential">exp</button>
+      <button onclick="tapFunction('1/')" title="Reciprocal">1/x</button>
+      <button onclick="tapResult()" class="wide-btn">=</button>
+    </section>
+  </main>
+  <script src="Cal.js"></script>
+</body>
+</html>
