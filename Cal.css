@@ -29,6 +29,9 @@ body {
       justify-content: center;
       gap: 10px;
     }
+.calculator-logo img {
+    border-radius:30%;
+}
   .screen {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
