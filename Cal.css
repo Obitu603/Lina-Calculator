@@ -28,7 +28,8 @@ body {
     }
 .calculator-logo img {
     border-radius:30%;
-    height:50px;
+    height:60px;
+    width:30%;
 }
   .screen {
     background: rgba(255, 255, 255, 0.5);
